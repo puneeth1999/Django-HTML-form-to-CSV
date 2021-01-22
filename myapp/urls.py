@@ -19,4 +19,5 @@ from .import views
 urlpatterns = [
     path('', views.contact),
     path('snippet', views.snippet_detail),
+    path('export_csv', views.export_csv, name='export-csv')
 ]

@@ -16,6 +16,9 @@
     {% csrf_token %} {{ form|crispy }}
     <button style="background: #4CAF50; color: aliceblue;" type="submit">Submit</button>
 </form>
+<div>
+    <a class="link-btn" href="{% url 'export-csv' %}">Export CSV</a>
+</div>
 
 <style>
     * {
@@ -39,7 +42,13 @@
     button {
         display: grid;
         margin: 0 auto;
-        font-size: 1rem;
+        font-size: 1em;
+    }
+    
+    .link-btn {
+        padding: 1rem;
+        color: aliceblue;
+        background-color: #4CAF50;
     }
 </style>
 
