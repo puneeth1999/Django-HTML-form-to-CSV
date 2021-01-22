@@ -1,0 +1,46 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+
+</head>
+
+<body>
+</body>
+<form method="post">
+    {% csrf_token %} {{ form|crispy }}
+    <button style="background: #4CAF50; color: aliceblue;" type="submit">Submit</button>
+</form>
+
+<style>
+    * {
+        margin: 2px;
+    }
+    
+    form {
+        margin: 2em 1em;
+    }
+    
+    input {
+        width: 100%;
+        height: auto;
+    }
+    
+    textarea {
+        width: 100%;
+        height: auto;
+    }
+    
+    button {
+        display: grid;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+</style>
+
+</html>
