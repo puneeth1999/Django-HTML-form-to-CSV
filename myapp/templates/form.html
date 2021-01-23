@@ -11,14 +11,16 @@
 </head>
 
 <body>
+    <br>
+    <div>
+        <a class="link-btn" href="{% url 'export-csv' %}">Export CSV</a>
+    </div><br><br>
 </body>
 <form method="post">
     {% csrf_token %} {{ form|crispy }}
     <button style="background: #4CAF50; color: aliceblue;" type="submit">Submit</button>
 </form>
-<div>
-    <a class="link-btn" href="{% url 'export-csv' %}">Export CSV</a>
-</div>
+
 
 <style>
     * {
@@ -50,6 +52,9 @@
         padding: 1rem;
         color: aliceblue;
         background-color: #4CAF50;
+        /* margin-left: 46%; */
+        float: right;
+        margin: 0rem 1rem;
     }
 </style>
 
