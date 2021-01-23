@@ -5,16 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>HTML to CSV Form</title>
     <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
 
 </head>
 
 <body>
-    <br>
+    <br><br>
+    <h1 style="font:bold sans-serif; text-align: center;">HTML to CSV file - DJANGO FORM</h1>
     <div>
         <a class="link-btn" href="{% url 'export-csv' %}">Export CSV</a>
-    </div><br><br>
+    </div><br><br><br>
 </body>
 <form method="post">
     {% csrf_token %} {{ form|crispy }}

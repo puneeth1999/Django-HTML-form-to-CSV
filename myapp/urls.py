@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from .import views
 urlpatterns = [
+    # path('', views.snippet_detail),
     path('', views.snippet_detail),
-    path('snippet', views.snippet_detail),
     path('export_csv', views.export_csv, name='export-csv')
 ]
