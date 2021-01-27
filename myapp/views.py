@@ -45,7 +45,6 @@ def export_csv(request):
     writer.writerow(['First Name', 'Last Name', 'Email', 'Body'])
     snippets = Snippet.objects.all()
     for snip in snippets:
-        writer.writerow([snip.fname, snip.lname,
-                         snip.email, snip.body])
+        writer.writerow([snip.fname, snip.lname, snip.email, snip.body])
 
     return response
