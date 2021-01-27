@@ -1,7 +1,7 @@
 import csv
 import datetime
 
-import xlwt
+# import xlwt
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render
