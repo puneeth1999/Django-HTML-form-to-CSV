@@ -5,7 +5,7 @@ from crispy_forms.layout import Layout, Submit
 
 
 class ContactForm(forms.Form):
-    fname = forms.CharField(label="First Name")
+    fname = forms.CharField(label="First Name", required=False)
     lname = forms.CharField(label="Last Name")
     email = forms.EmailField(label="Email")
     body = forms.CharField(widget=forms.Textarea)

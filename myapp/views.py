@@ -12,17 +12,17 @@ from .models import Snippet
 # Create your views here.
 
 
-def contact(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            fname = form.cleaned_data['fname']
-            lname = form.cleaned_data['lname']
-            email = form.cleaned_data['email']
-            print(fname, lname, email)
+# def contact(request):
+#     if request.method == 'POST':
+#         form = ContactForm(request.POST)
+#         if form.is_valid():
+#             fname = form.cleaned_data['fname']
+#             lname = form.cleaned_data['lname']
+#             email = form.cleaned_data['email']
+#             print(fname, lname, email)
 
-    form = ContactForm()
-    return render(request, 'form.html', {'form': form})
+#     form = ContactForm()
+#     return render(request, 'form.html', {'form': form})
 
 
 def snippet_detail(request):
