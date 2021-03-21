@@ -8,9 +8,8 @@ git clone https://github.com/puneeth1999/Django-HTML-form-to-CSV.git
 2. 
 ```
 pip install -r requirements.txt
-111
-3. 
-
+```
+3.  
 ```
 python manage.py runserver
 ```
